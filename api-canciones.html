@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es  ">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Canciones</title>
+
+  <style>
+    html {
+      font-family: sans-serif;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+    }
+
+    .loader {
+      display: none;
+      margin: auto;
+    }
+
+    @media screen and (min-width:800px) {
+
+      main {
+        flex-direction: row;
+      }
+
+      main>* {
+        padding: 1rem;
+        flex-basis: 50%;
+      }
+
+    }
+
+    .song blockquote {
+      white-space: pre-wrap;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Buscador de Canciones</h1>
+  <form id="song-search">
+    <input type="text" name="artist" placeholder="Nombre del Interprete"
+      required>
+    <br>
+    <input type="text" name="song" placeholder="Nombre de la Cancion" required>
+    <br>
+    <input type="submit">
+  </form>
+  <img class="loader" src="./assets/puff.svg" alt="Cargando...">
+  <aside class="error"></aside>
+  <main>
+    <article class="artist">
+    </article>
+    <article class="song">
+    </article>
+  </main>
+  <script src="./js/song-search.js"></script>
+</body>
+
+</html>

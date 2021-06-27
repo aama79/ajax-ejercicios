@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordPress REST API</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300;1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    html {
+      font-family: 'Raleway', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="wp-h1">WordPress REST API</h1>
+  <article id="site" class="site"></article>
+  <section id="posts" class="posts"></section>
+  <img class="wp-loader" src="./assets/puff.svg" alt="Cargando...">
+  <template id="post-template">
+    <article class="post">
+      <img src="" alt="" class="post-image">
+      <aside>
+        <h2 class="post-title"></h2>
+        <figure class="post-author"></figure>
+        <small class="post-date"></small>
+        <a class="post-link" target="_blank">ver publicacion original</a>
+        <p class="post-excerpt"></p>
+        <div class="post-categories"></div>
+        <div class="post-tags"></div>
+        <details class="post-content">
+          <summary>Ver contenido de la publicacion</summary>
+          <article></article>
+        </details>
+      </aside>
+    </article>
+    <hr class="wp-hr">
+  </template>
+  <script src="./js/wp-api-rest.js"></script>
+</body>
+
+</html>
