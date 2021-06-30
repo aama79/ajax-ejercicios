@@ -1,6 +1,8 @@
 # Curso JavaScript
 
-En este repositoro encontraras  los recursos del curso que he realizado paso a paso de [Curso de _JavaScript_](https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA) de [Jonathan MirCha](https://jonmircha.com/).
+En este repositoro encontraras los recursos del curso que he realizado paso a paso de [Curso de _JavaScript_](https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA) de [Jonathan MirCha](https://jonmircha.com/).
+
+Especificamente las secciones de los ejercicios de AJAX.
 
 Este repositorio incluye:
 
